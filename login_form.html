@@ -1,19 +1,57 @@
 <html>
 <body>
+<head>
+<title>Login</title>
+<style>
+body{
+     background-image: url('log.png');
+     background-size:cover;	 
+	 background-position:center center;
+	 background-repeat:no-repeat;
+}
+form{   
+            max-width: 400px;
+            margin: auto;
+            padding: 2em;
+            border: 2px solid #ccc;
+            border-radius: 1em;
+			background: rgba(255, 255, 255, 0.5); 
+	}
+#div1 {
+            margin-bottom: 2em;
+            margin-top: 8em;
+        }
+p,h2{
+    text-align:center;
+}
+input{
+      width:100%;
+}		
+button{
+      width:100%;
+	  background-color:gray;
+	  border-color:black;
+}
+#checkbox{
+       width:20px;
+}			
+</style>
+</head>
+<div id="div1">
 <form>
 <div>
 <h2>Login </h2>
 <label for= "username">Username:</label><br>
 <input type="text" placeholder="Enter username" name="username" id="username"><br><br>
 <label for ="pwd">Password:</label><br>
-<input type="password" placeholder="Enter password" name="pwd" id="pwd"><br>
-<p><input type ="checkbox" name="checkbox1"> Remember me </p>
+<input type="password" placeholder="Enter password" name="pwd" id="pwd"><br><br>
+<input type ="checkbox" name="checkbox" id="checkbox"> <label for ="checkbox">Remember me </label><br><br>
 <button type ="submit" > login </button>
 </div>
 <div>
 <p>Don't have an account?<a href="register_form.html">Register</a>.</p>
 </div>
 </form>
-
+</div>
 </body>
 </html>
